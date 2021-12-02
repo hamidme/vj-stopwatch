@@ -6,7 +6,6 @@ let showMilisec = document.querySelector(".mil-sec");
 let showSec = document.querySelector(".sec");
 let showMin = document.querySelector(".min");
 let startCount = document.querySelector(".start");
-let stopCount = document.querySelector(".stop");
 let resetCount = document.querySelector(".reset");
 
 //show leading zero
