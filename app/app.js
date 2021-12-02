@@ -55,7 +55,6 @@ function stopCounter() {
   clearInterval(nCounting);
   nCounting = null;
   startCount.innerHTML = "resume";
-  startCount.disabled = false;
   startCount.value = "on";
 }
 
@@ -73,17 +72,19 @@ function toggleCounter() {
 function resetCounter() {
   mili = 00;
   showMilisec.innerHTML = "00";
+
   sec = 00;
   showSec.innerHTML = "00";
+
   min = 00;
   showMin.innerHTML = "00";
+
   stopCounter();
-  startCount.disabled = false;
   startCount.innerHTML = "start";
 }
 
 //when the start button is clicked
 startCount.addEventListener("click", toggleCounter);
 
-//when the rest button is clicked
+//when the reset button is clicked
 resetCount.addEventListener("click", resetCounter);
